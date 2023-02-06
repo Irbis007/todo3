@@ -1,0 +1,14 @@
+
+
+.item__delete{
+    width: max-content;
+    height: max-content;
+}
+
+.data__subitem label{
+    display: none;
+    background: #000;
+}
+.data__subitem.label label{
+    display: block;
+}
