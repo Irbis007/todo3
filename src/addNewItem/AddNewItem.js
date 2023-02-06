@@ -82,6 +82,7 @@ class AddNewItem extends Component{
         this.setState({links: newArr})
     }
     
+/* fsdbgnhmjgl;,hfknjbd hdjvgdjbfknglmh;,'''''' ksfn,dnt;kmehiprgbouewjsvnltnejoihprgobuelnwksm.vfnivougevwabsd */
 
     deleteListItem = (id) =>{
         this.setState(({links}) => {
