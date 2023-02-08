@@ -71,8 +71,9 @@ const MainComponent = (props) =>{
                 if(item.id === id){
                     data.disabled = true
                     data.id = id
+                    data.private = privateProps
                     onChangeDataReq(data)
-                    return item = data
+                    return data
                 } else return item
             })
         )
