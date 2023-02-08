@@ -4,14 +4,15 @@ import ListItem from '../listItem/ListItem';
 
 
 
-const List =  ({data, onToggleProp, deleteItem, onChangeData}) =>{
+const List =  ({data, onToggleProp, deleteItem, onChangeData, privateProps}) =>{
 
     let element
     if(!data || data.length < 1){
         element = "  Нет Данных"
     } else {
         element = data.map(item =>{
-           if(item) {
+            console.log(item)
+           if(item && privateProps === item.private) {
                const {id, ...itemProps} = item
                const subFunction = (data) =>{
                    onChangeData(data, id)
@@ -24,7 +25,7 @@ const List =  ({data, onToggleProp, deleteItem, onChangeData}) =>{
                        onChangeData={subFunction}
                    />
                )
-           } else return 'dfhdfgnf'
+           } 
        })
    }
 

@@ -36,7 +36,7 @@ class DataList extends Component{
             label = ' '
         }
 
-        console.log(this.props.label)
+        
         return (
             <li className="data__item">
                 <ul className="data__sublist">

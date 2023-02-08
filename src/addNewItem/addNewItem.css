@@ -5,6 +5,9 @@
 
 
 .add__item .list{
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid gret;
     display: flex;
     gap: 5px;
 }
