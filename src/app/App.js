@@ -13,11 +13,9 @@ const App = () =>{
             <div className="app">
                 <Header/>
                 <main className="main">
-                    
                     <Routes>
-                        <Route path="/public"  element={<Public/>}/>
+                        <Route path="/"  element={<Public/>}/>
                         <Route exact path="/private" element={<Private/>}/>
-                        <Route exact path="*" element={<Public/>}/>
                     </Routes>
                 </main>
             </div>
