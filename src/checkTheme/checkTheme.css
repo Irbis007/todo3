@@ -35,11 +35,21 @@
     transition: all .3s;
 }
 
-.check__theme.active .circle{
+.check__theme.black__theme .circle{
     transform: translateX(24.5px);
     transition: all .3s;
 }
 
 .check__theme .off, .check__theme .on{
     color: white;
+}
+
+
+
+.check__theme.black__theme{
+    background: #383838;
+}
+
+.check__theme.black__theme .circle{
+    background: #0f0f0f;
 }

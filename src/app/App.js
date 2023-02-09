@@ -11,7 +11,7 @@ const App = () =>{
     return(
         <Router>
             <div className="app">
-                <Header/>
+                <Header getTheme/>
                 <main className="main">
                     <Routes>
                         <Route path="/"  element={<Public/>}/>
