@@ -16,7 +16,7 @@ const MainComponent = (props) =>{
     const [loaded] = useState(false)
     useEffect(() =>{
         axios({
-            url: 'https://google-map-prod.onrender.com/api/get-pages-data',
+            url: 'https://testmap-g1xx.onrender.com/api/get-pages-data',
             headers:{
                 'Content-Type': 'application/json',
             }
@@ -40,7 +40,7 @@ const MainComponent = (props) =>{
 
     const onAddData = (data) =>{
         data.private = privateProps
-        axios.post('https://google-map-prod.onrender.com/api/post-pages-data', {
+        axios.post('https://testmap-g1xx.onrender.com/api/post-pages-data', {
             ...data 
           })
         .then(function (response) {
@@ -80,7 +80,7 @@ const MainComponent = (props) =>{
     }
 
     const onChangeDataReq = async (data) =>{
-        await axios.patch('https://google-map-prod.onrender.com/api/update-page-data', {
+        await axios.patch('https://testmap-g1xx.onrender.com/api/update-page-data', {
             ...data
         })
     }
@@ -92,7 +92,7 @@ const MainComponent = (props) =>{
         )
         axios({
             method: 'delete',
-            url: 'https://google-map-prod.onrender.com/api/delete-page-id',
+            url: 'https://testmap-g1xx.onrender.com/api/delete-page-id',
             headers:{
                 'Content-Type': 'application/json',
             },

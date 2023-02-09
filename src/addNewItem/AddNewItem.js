@@ -1,8 +1,8 @@
 import { Component } from 'react'
-
 import {CgMathPlus} from 'react-icons/cg'
 
 import DataList from '../listItem/DataList/DataList';
+import InputItem from '../listItem/item/Item';
 
 import './addNewItem.css'
 
