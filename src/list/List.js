@@ -11,7 +11,6 @@ const List =  ({data, onToggleProp, deleteItem, onChangeData, privateProps}) =>{
         element = "  Нет Данных"
     } else {
         element = data.map(item =>{
-            console.log(item)
            if(item && privateProps === item.private) {
                const {id, ...itemProps} = item
                const subFunction = (data) =>{
