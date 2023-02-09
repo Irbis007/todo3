@@ -2,6 +2,54 @@
 .list__item .list{
     display: flex;
     gap: 5px;
+    margin-top: 15px;
+}
+
+.list-wrapper{
+    width: calc((240px * 7) + 710px);
+}
+
+.list__item{
+    margin-top: 25px;
+    border-top: 1px solid #000;
+}
+
+.data__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((240 * 2) + 5);
+    gap: 5px;
+}
+
+
+.edit{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 1px solid blue;
+    color: darkblue;
+}
+.edit:hover{
+    background: rgba(0, 0, 255, 0.356);
+}
+
+.delete{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 1px solid darkred;
+    color: darkred;
+}
+.delete:hover{
+    background: rgba(139, 0, 0, 0.356);
+}
+
+.save{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 1px solid green;
+    color: darkgreen;
+}
+.save:hover{
+    background: rgba(0, 128, 0, 0.356);
 }
 
 .list__item-btn{
@@ -15,59 +63,6 @@
     transition: all .2s;
 }
 
-
-.data__list{
-    display: flex;
-    flex-wrap: wrap;
-    width: calc((240 * 2) + 5);
-    gap: 5px;
-}
-
-
-.hide__links{
-    display: block;
-    width: 25px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hide__links.true{
-    background: red;
-}
-
-
-.data__list{
-    grid-column: 4/5;
-    grid-row: 1 / 10;
-}
-
-.edit{
-    border: 1px solid blue;
-    color: darkblue;
-}
-.edit:hover{
-    background: rgba(0, 0, 255, 0.356);
-}
-
-.delete{
-    border: 1px solid darkred;
-    color: darkred;
-}
-.delete:hover{
-    background: rgba(139, 0, 0, 0.356);
-}
-
-
-.save{
-    border: 1px solid green;
-    color: darkgreen;
-}
-.save:hover{
-    background: rgba(0, 128, 0, 0.356);
-}
-
 li{
     position: relative;
 }
@@ -78,10 +73,25 @@ li label{
     font-size: 9px;
     top: -5px;
     left: 10px;
-    background: #fff;
+    transition: all .3s;
+    background-color: #fff;
+}
+.black__theme li label{
+    background: #262626;
+    color: white;
+    transition: all .3s;
 }
 
 
-li input{
+.list .item input, .data__sublist input{
+    border: none;
+    border-bottom: 1px solid rgb(209, 209, 209);
     background: transparent;
+
+    height: 30px;
+    width: 240px;
+    padding: 3px 10px;
+}
+.black__theme .list .item input,.black__theme .data__sublist input{
+    color: white;
 }

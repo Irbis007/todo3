@@ -46,10 +46,10 @@
 
 
 
-.check__theme.black__theme{
+.black__theme .check__theme{
     background: #383838;
 }
 
-.check__theme.black__theme .circle{
+.black__theme .circle{
     background: #0f0f0f;
 }

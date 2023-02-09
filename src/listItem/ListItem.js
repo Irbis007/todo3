@@ -197,7 +197,7 @@ class ListItem extends Component {
             type="number"
           />
           <ul className="data__list">{elem}</ul>
-          <li className="item">
+          <li className="item item__buttons">
             <button
               className="add__list-links"
               style={styles}

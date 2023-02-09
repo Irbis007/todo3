@@ -3,11 +3,16 @@
     padding: 0;
 }
 
+.add__item{
+    width: calc((240px * 7) + 710px);
+    margin-top: 25px;
+    border-top: 1px solid #000;
+}
+
+
 
 .add__item .list{
     width: 100%;
-    padding-top: 20px;
-    border-top: 1px solid gret;
     display: flex;
     gap: 5px;
 }
@@ -17,18 +22,18 @@ ul li {
     display: flex;
     gap: 5px;
 }
+
 .data__sublist{
     display: flex;
     gap: 5px;
     width: 100%;
 }
 
-.list .item input, .data__sublist input{
-    border: 1px solid rgb(209, 209, 209);
-    height: 30px;
-    width: 240px;
-    border-radius: 5px;
-    padding: 3px 10px;
+.item__buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 90px);
+    grid-template-rows: 30px 20px;
+    row-gap: 6px;
 }
 
 .add__item-button{

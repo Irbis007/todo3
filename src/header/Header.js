@@ -9,11 +9,12 @@ import CheckTheme from '../checkTheme/CheckTheme'
 import './header.css'
 
 
-const Header = () =>{
+const Header = ({sendTheme}) =>{
     let [blackTheme, setBlackTheme] = useState(false)
 
     const getTheme = (theme) =>{
         setBlackTheme(!theme)
+        sendTheme(theme)
     }
     let classe = ''
     if(blackTheme) {
