@@ -31,6 +31,14 @@
 .edit:hover{
     background: rgba(0, 0, 255, 0.356);
 }
+.black__theme .edit{
+    border: 1px solid orange;
+    color: orange;
+}
+.black__theme .edit:hover{
+    background: rgba(255, 166, 0, 0.356);
+}
+
 
 .delete{
     grid-column: 2/3;
@@ -42,6 +50,16 @@
     background: rgba(139, 0, 0, 0.356);
 }
 
+.black__theme .delete{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: 1px solid red;
+    color: red;
+}
+.delete:hover{
+    background: rgba(255, 0, 0, 0.357);
+}
+
 .save{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -50,6 +68,26 @@
 }
 .save:hover{
     background: rgba(0, 128, 0, 0.356);
+}
+
+.save{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 1px solid green;
+    color: green;
+}
+.save:hover{
+    background: rgba(0, 157, 0, 0.356);
+}
+
+.black__theme .save{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 1px solid green;
+    color: green;
+}
+.black__theme .save:hover{
+    background: rgba(0, 157, 0, 0.356);
 }
 
 .list__item-btn{

@@ -62,4 +62,11 @@ ul li {
     justify-content: center;
     align-items: center;
     margin-left: auto;
+    background: rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, 0.379);
+}
+
+.black__theme .add__list-links{
+    background: rgba(255, 255, 255, 0.257);
+    border: 1px solid rgba(255, 255, 255, 0.379);
 }
