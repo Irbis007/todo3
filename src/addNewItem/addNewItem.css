@@ -64,6 +64,7 @@ ul li {
     margin-left: auto;
     background: rgba(0, 0, 0, .1);
     border: 1px solid rgba(0, 0, 0, 0.379);
+    transition: all .3s;
 }
 
 .black__theme .add__list-links{

@@ -129,6 +129,7 @@ li label{
     height: 30px;
     width: 240px;
     padding: 3px 10px;
+    transition: all .3s;
 }
 .black__theme .list .item input,.black__theme .data__sublist input{
     color: white;
