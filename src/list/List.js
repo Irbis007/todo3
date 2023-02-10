@@ -8,7 +8,7 @@ const List =  ({data, onToggleProp, deleteItem, onChangeData, privateProps}) =>{
 
     let element
     if(!data || data.length < 1){
-        element = "  Нет Данных"
+        element = "no data"
     } else {
         element = data.map(item =>{
            if(item && privateProps === item.private) {
@@ -29,9 +29,9 @@ const List =  ({data, onToggleProp, deleteItem, onChangeData, privateProps}) =>{
    }
 
     return(
-        <div className="list-wrapper">
+        <ul className="list-wrapper">
             {element}
-        </div>
+        </ul>
     );
 };
 

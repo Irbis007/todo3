@@ -7,6 +7,8 @@
     position: absolute;
     right: -23px;
     z-index: 100;
+    width: 15px !important;
+    height: 15px !important;
 }
 
 .data__subitem label{

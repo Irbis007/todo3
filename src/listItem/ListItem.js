@@ -136,7 +136,7 @@ class ListItem extends Component {
     }
 
     return (
-      <div className="list__item">
+      <li className="list__item">
         <ul className="list">
           <InputItem
             label="Href"
@@ -226,7 +226,7 @@ class ListItem extends Component {
             </button>
           </li>
         </ul>
-      </div>
+      </li>
     );
   }
 }

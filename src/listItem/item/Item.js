@@ -11,7 +11,7 @@ const InputItem = ({label, id, disabled, onChangeValue, name, valueProp, type}) 
 
 
     return(
-        <li className="item">
+        <li className="item" id={'inp-'+id}>
             <label htmlFor={id}>{label}</label>
             <input type={type || 'text'} 
                 id={id}

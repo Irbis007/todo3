@@ -20,6 +20,9 @@
 
 }
 
+.header a.active{
+    color: orange;
+}
 .header a:active{
     color: orange;
 }
